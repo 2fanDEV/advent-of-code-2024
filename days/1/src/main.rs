@@ -1,4 +1,4 @@
-use std::{fs, i32};
+use std::{fs, i32, iter::zip};
 
 fn main() {
     let mut location_id_1: Vec<i32> = Vec::new();
