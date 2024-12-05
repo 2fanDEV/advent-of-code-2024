@@ -1,3 +1,4 @@
+
 use core::error;
 use std::{
     cmp::{max, min},
@@ -5,8 +6,8 @@ use std::{
     vec::Splice,
 };
 
-fn main() {
-    let input = fs::read_to_string("input/input").expect("Failed to read input file");
+pub fn main() {
+    let input = fs::read_to_string("input/02").expect("Failed to read input file");
     let mut cnt = input
         .lines()
         .filter(|&line| is_report_safe(parse_line(line)))

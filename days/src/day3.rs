@@ -2,11 +2,12 @@ use std::fs;
 
 use regex::Regex;
 
-fn main() {
-    let input = fs::read_to_string("../input/input").expect("Failed to read input file");
+pub fn main() {
+    let input = fs::read_to_string("input/03").expect("Failed to read input file");
     mul(input.clone());
     mul_only_enabled(input);
 }
+
 fn mul_only_enabled(input: String) -> i32 {
     let reg_ex = Regex::new(r"don't\(\).+?((do\(\)))|don't\(\).*?.*/gm");
     let collected = reg_ex

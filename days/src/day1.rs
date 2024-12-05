@@ -1,10 +1,10 @@
 use std::{fs, i32, iter::zip};
 
-fn main() {
+pub fn main() {
     let mut location_id_1: Vec<i32> = Vec::new();
     let mut location_id_2: Vec<i32> = Vec::new();
 
-    let input = fs::read_to_string("../input/input").expect("Failed to read input file");
+    let input = fs::read_to_string("input/01").expect("Failed to read input file");
     for line in input.lines() {
         let split_line = line.split_once(" ").unwrap();
         location_id_1.push(split_line.0.trim().parse().expect("Failed to parse number"));
