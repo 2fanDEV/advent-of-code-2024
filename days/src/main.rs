@@ -7,5 +7,5 @@ fn main() {
     // println!("day4 res: {:?}", day4::main());
     // println!("day5 res: {:?}", day5::main());
     // println!("day7 res: {:?}", day7::main());
-    println!("day8 res: {:?}", day8::main());
+    println!("day8 res: {:?}", day7::main());
 }

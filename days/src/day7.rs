@@ -59,10 +59,6 @@ fn is_solvable(
     index: usize,
     numbers: &mut Vec<u64>,
 ) -> bool {
-    // println!("{index}, {}, {current_value}", numbers.len());
-    if current_value == "162042343638683".parse::<u64>().unwrap() {
-        println!("YEA")
-    }
     if index == numbers.len() {
         return current_value == test_value;
     }
